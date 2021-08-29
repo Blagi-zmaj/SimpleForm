@@ -1,0 +1,62 @@
+body {
+    background: linear-gradient(0.75turn, #3a84a3, #ebf8e1, #f39632);
+}
+
+#grid-container {
+    display: grid;
+    height: calc(100vh - 20px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+#form {
+    height: 400px;
+    width: 400px;
+    background-color: #D4E4F7;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted greenyellow;
+    box-shadow: 5px 5px 15px #000;
+}
+
+input {
+    border-radius: 10px;
+}
+
+.inputBox {
+    width: 70%;
+}
+
+.inputName {
+    grid-row: 1/ span 1;
+}
+
+.inputEmail {
+    grid-row: 2/ span 1;
+}
+
+.inputZipCode {
+    grid-row: 3/4;
+}
+
+.inputAge {
+    grid-row: 4/5;
+}
+
+.radioButtons {
+    grid-row: 5/6;
+    width: 100%;
+}
+
+.confirmInput {
+    grid-row: 6/7;
+    width: 100%;
+}

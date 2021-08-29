@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div id="grid-container">
+            <div id="form">
+                <div class="inputBox inputName">
+                    <label for="name">Name:</label>
+                    <input 
+                        type="text" id="name" name="name" size="30" required 
+                        oninvalid="this.setCustomValidity('Enter name.')"
+                        oninput="this.setCustomValidity('')"
+                    >
+                </div>
+                <div class="inputBox inputEmail">
+                    <label for="email">Email:</label>
+                    <input 
+                        type="email" id="email" name="email" size="30" required
+                        oninvalid="this.setCustomValidity('Enter email')"
+                        oninput="this.setCustomValidity('')"
+                    >
+                </div>
+                <div class="inputBox inputZipCode">
+                    <label for="zipCode">ZIP Code:</label>
+                    <input 
+                        type="number" id="zipCode" name="zipCode" required
+                        oninvalid="this.setCustomValidity('Enter zip code')"
+                        oninput="this.setCustomValidity('')"
+                        pattern="[0-9]*"
+                    >
+                </div>
+                <div class="inputBox inputAge">
+                    <label for="age">Age:</label>
+                    <input 
+                        type="number" id="age" name="age" min="18" required
+                        oninvalid="this.setCustomValidity('Age must be over 18')"
+                        oninput="this.setCustomValidity('')"
+                    >
+                </div>
+                <div class="inputBox radioButtons">
+                    <label>Gender:</label></br>
+                    <input type="radio" name="gender" value="male" required>Male
+                    <input type="radio" name="gender" value="female" required>Female
+                    <input type="radio" name="gender" value="female" required>Hamster
+                </div>
+                <div class="inputBox confirmInput">
+                    <input 
+                        type="checkbox" required 
+                        oninvalid="this.setCustomValidity('You must accept terms to continue')"
+                        oninput="this.setCustomValidity('')"
+                    >I accept <a href="#">Terms & Conditions</a> 
+                </br></br>
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    
+</body>
+</html>
